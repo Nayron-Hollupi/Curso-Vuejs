@@ -1,15 +1,16 @@
 <template>
-<eventos :cliente="clienteN" :showIdade="true"/>
 
-<eventos :cliente="clienteN" :showIdade="false"/>
+<Cadastro/>
+
 </template>
 
 <script>
 //import home from './components/home';
 //import login from './components/login';
-//import forvue from './components/forvue';
+import Cadastro from './components/Cadastro';
 //import aula2 from './components/aula2';
-import eventos from './components/eventos';
+//import eventos from './components/eventos';
+//import formulario from './components/formulario';
 
 export default{ data(){
     return{
@@ -19,26 +20,7 @@ export default{ data(){
       email:"Mer@tet@",
       idade:"55"
   },
-  cadastro: [
-    {
-      id: 1,
-  nome: "Nayron",
-  email:"teste@teste",
-  idade: 31
-  },
- {
-   id: 2,
-  nome: "Daiane",
-      email:"Daia@teste",
-      idade: 27
-  },
-  {
-    id: 3,
-  nome: "Cleide",
-      email:"Veia@teste",
-      idade: 100
-  },
-  ]
+
 }
 },
   
@@ -46,9 +28,10 @@ export default{ data(){
   components:{
    // home,
   // login,
-//forvue,
+Cadastro,
   //aula2,
-  eventos
+ // eventos,
+ // formulario
  
   }
 }
